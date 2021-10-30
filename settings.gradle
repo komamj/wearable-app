@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Wearable App"
 include ':app'
+include ':common'
