@@ -4,8 +4,8 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-  //  id("dagger.hilt.android.plugin")
-   // id("kotlin-parcelize")
+    id("dagger.hilt.android.plugin")
+    id("kotlin-parcelize")
 }
 
 val versionMajor = 1
@@ -27,14 +27,11 @@ android {
     buildToolsVersion = Versions.buildTools
 
     defaultConfig {
-        applicationId = "com.komamj.wearable.app"
+        applicationId = "com.komamj.wearable.weather"
         minSdk = Versions.minSdk
         targetSdk = Versions.targetSdk
         versionCode = versionBuild
         versionName = "$versionMajor.$versionMinor.$versionPatch"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "FULL_VERSION_NAME", "\"$versionName build $versionCode\"")
-        setProperty("archivesBaseName", "$applicationId-v$versionName($versionCode)")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -100,7 +97,7 @@ android {
 }
 
 dependencies {
-   // dagger()
+    dagger()
 
     implementation(project(":common"))
 }
