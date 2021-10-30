@@ -100,4 +100,5 @@ dependencies {
     dagger()
 
     implementation(project(":common"))
+    implementation(project(":network"))
 }
