@@ -1,4 +1,4 @@
 rootProject.name = "Wearable App"
-include ':app'
 include ':weather'
+include ':sports'
 include ':common'
