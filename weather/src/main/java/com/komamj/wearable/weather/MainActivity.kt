@@ -5,7 +5,6 @@ import android.os.Bundle
 import com.komamj.wearable.weather.databinding.ActivityMainBinding
 
 class MainActivity : Activity() {
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +12,5 @@ class MainActivity : Activity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
 }

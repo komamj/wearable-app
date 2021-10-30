@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:${Versions.android_build_tools}")
@@ -13,6 +14,14 @@ buildscript {
 
 plugins {
     id("com.diffplug.spotless") version Versions.spotless apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
 }
 
 subprojects {
